@@ -26,34 +26,39 @@ O objetivo deste projeto é fornecer um exemplo prático de um blog responsivo, 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/joaovictormedina/Blog-responsivo.git
-Navegue até o diretório do projeto:
+   ```
 
-bash
-Copiar código
-cd Blog-responsivo
-Abra o arquivo index.html em um navegador para visualizar o blog responsivo.
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd Blog-responsivo
+   ```
 
-Contribuições
+3. Abra o arquivo `index.html` em um navegador para visualizar o blog responsivo.
+
+## Contribuições
+
 Estou aberto a sugestões e melhorias. Para contribuir:
 
-Faça um fork do repositório.
+1. Faça um fork do repositório.
 
-Crie uma branch para suas alterações:
+2. Crie uma branch para suas alterações:
+   ```bash
+   git checkout -b minha-alteracao
+   ```
 
-bash
-Copiar código
-git checkout -b minha-alteracao
-Faça commit das suas alterações e envie para o repositório:
+3. Faça commit das suas alterações e envie para o repositório:
+   ```bash
+   git commit -am 'Descrição das mudanças'
+   git push origin minha-alteracao
+   ```
 
-bash
-Copiar código
-git commit -am 'Descrição das mudanças'
-git push origin minha-alteracao
-Abra um Pull Request para revisão.
+4. Abra um Pull Request para revisão.
 
-Contato
+## Contato
+
 Se você está interessado em discutir oportunidades de colaboração ou contratações, entre em contato:
 
-E-mail: joaovictor.zipp@gmail.com
-LinkedIn: João Victor Medina Pinto
-GitHub: joaovictormedina
+- **E-mail:** [joaovictor.zipp@gmail.com](mailto:joaovictor.zipp@gmail.com)
+- **LinkedIn:** [João Victor Medina Pinto](https://www.linkedin.com/in/joaovictormedina)
+- **GitHub:** [joaovictormedina](https://github.com/joaovictormedina)
+```
