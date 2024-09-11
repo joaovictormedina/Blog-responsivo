@@ -218,6 +218,46 @@ body {
     border-radius: 8px;
 }
 
+.recent-text.text-1 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    color: rgba(2, 162, 143, 1);
+    margin: 2% 0 0 5%;
+}
+
+.recent-text.text-2 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    margin: 2% 0 0 5%;
+}
+
+.recent-text.text-3 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    text-align: left;
+    color: rgba(97, 97, 97, 1);
+    margin: 2% 0 0 5%;
+}
+
+.recent-text.text-4 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    margin: 2% 0 0 5%;
+}
+
 /* Estilo para o cabeçalho das Categorias */
 .categories-header {
     width: 97%;
@@ -301,7 +341,9 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-
+.hidden {
+    display: none;
+}
 
 
 
@@ -432,6 +474,7 @@ body {
         /* Muda a direção para coluna */
         align-items: center;
         /* Centraliza os itens */
+        justify-content: center;
     }
 
     .recent-post-one,
