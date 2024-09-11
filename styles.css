@@ -40,9 +40,8 @@ body {
 /* Segunda Divisão */
 .content-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     /* Não permitir quebra de linha */
-    align-items: stretch;
     /* Esticar itens para ter a mesma altura */
     padding: 2rem;
     gap: 2rem;
@@ -57,7 +56,7 @@ body {
     width: 100%;
     height: auto;
     /* Mantém a proporção da imagem */
-    max-width: 40vw;
+    max-width: 720px;
     /* Largura máxima baseada na largura da tela */
     border-radius: 10px;
 }
@@ -95,7 +94,7 @@ body {
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
 
 /* Itens Laterais */
@@ -131,7 +130,6 @@ body {
     color: rgba(0, 0, 0, 1);
     margin: 7% 0 0 5%;
     white-space: nowrap;
-
     /* Permite que o texto ocupe o espaço restante */
 }
 
@@ -145,6 +143,164 @@ body {
     color: rgba(97, 97, 97, 1);
     margin: 5% 0 0 5%;
 }
+
+/* Estilos para a nova div de Posts Mais Recentes */
+.recent-posts {
+    width: 100%;
+    max-width: 700px;
+    /* Define a largura máxima */
+    height: 56px;
+    /* Define a altura */
+    /* Define o padding */
+    gap: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: rgba(2, 162, 143, 1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    margin-top: 0 auto;
+    /* Ajuste de espaçamento para não ficar colado na imagem */
+}
+
+/* Título Posts Mais Recentes */
+.recent-posts-title {
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin: 5%
+}
+
+/* Link Ver Todos */
+.view-all-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    margin: 0% 5%;
+}
+
+.second-container {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.third-container {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.img {
+    width: 100%;
+    max-width: 360px;
+}
+
+.recent-post-one,
+.recent-post-two,
+.recent-post-three,
+.recent-post-four {
+    padding: 0px;
+    margin: 0px 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    border-radius: 8px;
+}
+
+/* Estilo para o cabeçalho das Categorias */
+.categories-header {
+    width: 97%;
+    padding: 1rem;
+    background: rgba(2, 162, 143, 1);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    /* Espaçamento abaixo do cabeçalho */
+}
+
+/* Título das Categorias */
+.categories-title {
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    text-align: left;
+}
+
+/* Lista de Categorias */
+.categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* Espaçamento entre os itens */
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: rgba(245, 245, 245, 1);
+}
+
+/* Itens de cada Categoria */
+.category-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    text-align: left;
+    color: rgba(97, 97, 97, 1);
+
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Contêiner principal para o layout lado a lado */
+.main-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Ajuste para exibir as seções lado a lado */
+    gap: 2rem;
+    /* Espaço entre as seções */
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Estilo para a nova div de Copyright */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    /* Altura do rodapé */
+    background: rgba(2, 162, 143, 1);
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    /* Espaçamento antes do rodapé */
+}
+
+/* Estilo para o texto de Copyright */
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
 
 
 
@@ -213,6 +369,18 @@ body {
         font-size: 0.875rem;
         /* Ajuste o tamanho da fonte */
     }
+
+    .recent-posts {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        max-width: 700px
+    }
+
+    .view-all-link {
+        margin-top: 0.5rem;
+        /* Adiciona espaço entre o título e o link */
+    }
 }
 
 @media (max-width: 480px) {
@@ -244,5 +412,35 @@ body {
     .side-item {
         height: auto;
         /* Permitir altura variável */
+    }
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 1024px) {
+    .main-layout {
+        flex-direction: column;
+        /* Alterar para coluna em telas menores */
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .second-container,
+    .third-container {
+        flex-direction: column;
+        /* Muda a direção para coluna */
+        align-items: center;
+        /* Centraliza os itens */
+    }
+
+    .recent-post-one,
+    .recent-post-two,
+    .recent-post-three,
+    .recent-post-four {
+        width: 100%;
+        /* Ajusta a largura para ocupar o espaço completo */
+        margin: 0 0 10px 0;
+        /* Ajusta o espaçamento entre as divs */
     }
 }

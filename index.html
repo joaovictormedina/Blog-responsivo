@@ -20,9 +20,71 @@
     </header>
 
     <!-- Segunda Divisão: Imagem e Div ao lado direito -->
-    <section class="content-container">
-        <img src="img/predios.svg" alt="Imagem de um prédio" class="building-image">
-        <div class="side-container">
+    <div class="main-layout">
+        <section class="content-container">
+            <div class="image-container">
+                <img src="img/predios.svg" alt="Imagem de um prédio" class="building-image">
+            </div>
+
+            <div class="recent-posts">
+                <p class="recent-posts-title">Posts mais recentes</p>
+                <a href="#" class="view-all-link">Ver todos</a>
+            </div>
+
+            <div class="second-container">
+                <!-- Divs de Posts com Imagem e Textos -->
+                <div class="recent-post-one">
+                    <img class="img" src="img/desenvolvimento.svg" alt="Imagem do Post 1" class="recent-image">
+                    <p class="recent-text text-1">desenvolvimento</p>
+                    <p class="recent-text text-2">Desenvolvimento mobile</p>
+                    <p class="recent-text text-3"><strong>By</strong> Fabio Tetsuo</p>
+                    <p class="recent-text text-4">Lorem ipsum dolor sit amet consectetur. In <br>
+                        vitae urna commodo amet congue integer <br>
+                        dapibus. Interdum semper mauris convallis <br>
+                        fusce enim odio. Vitae montes ridiculus felis.</p>
+                    <p class="side-date">22 Agosto 2022</p>
+                </div>
+
+                <div class="recent-post-two">
+                    <img class="img" src="img/saude.svg" alt="Imagem do Post 2" class="recent-image">
+                    <p class="recent-text text-1">saude</p>
+                    <p class="recent-text text-2">Balancear vida profissional e pessoal</p>
+                    <p class="recent-text text-3"><strong>By</strong> Ridho Satriawan</p>
+                    <p class="recent-text text-4">Lorem ipsum dolor sit amet consectetur. Et <br>
+                        consectetur at consectetur sed nisl tempor.</p>
+                    <p class="side-date">22 Agosto 2022</p>
+                </div>
+            </div>
+
+            <div class="third-container">
+                <div class="recent-post-three">
+                    <img class="img" src="img/desenvolvimento2.svg" alt="Imagem do Post 3" class="recent-image">
+                    <p class="recent-text text-1">desenvolvimento</p>
+                    <p class="recent-text text-2">Configurando VSCode</p>
+                    <p class="recent-text text-3"><strong>By</strong> Fabio Tetsuo</p>
+                    <p class="recent-text text-4">Lorem ipsum dolor sit amet consectetur. Erat <br>
+                        interdum tortor ac sagittis id a etiam. Tellus <br>
+                        vitae arcu dignissim massa aliquam vel tellus. <br>
+                        Ipsum massa arcu nulla sed purus in ac.</p>
+                    <p class="side-date">22 Agosto 2022</p>
+                </div>
+
+                <div class="recent-post-four">
+                    <img class="img" src="img/produtividade.svg" alt="Imagem do Post 4" class="recent-image">
+                    <p class="recent-text text-1">produtividade</p>
+                    <p class="recent-text text-2">2 monitores ou 1 ultrawide?</p>
+                    <p class="recent-text text-3"><strong>By</strong> Fulano da Silva</p>
+                    <p class="recent-text text-4">Lorem ipsum dolor sit amet consectetur. Arcu <br>
+                        tellus adipiscing sagittis tristique. Eget <br>
+                        molestie posuere enim pretium venenatis <br>
+                        nunc ligula donec a. Velit senectus amet nulla.</p>
+                    <p class="side-date">22 Agosto 2022</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terceira Divisão: Posts Populares -->
+        <aside class="side-container">
             <div class="popular-posts-header">
                 <p class="popular-posts-title">Posts populares</p>
             </div>
@@ -36,19 +98,35 @@
             <div class="side-item">
                 <img src="img/git.svg" alt="Imagem Git" class="side-image">
                 <div>
-                    <p class="side-text">Desenvolvimento Atual</p>
+                    <p class="side-text">GitLab vs GitHub</p>
                     <p class="side-date">22 Agosto 2022</p>
                 </div>
             </div>
             <div class="side-item">
                 <img src="img/cafe.svg" alt="Imagem Café" class="side-image">
                 <div>
-                    <p class="side-text">Desenvolvimento Atual</p>
+                    <p class="side-text">Café atrapalha?</p>
                     <p class="side-date">22 Agosto 2022</p>
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- Primeira nova div com o título "Categorias" -->
+            <div class="categories-header">
+                <p class="categories-title">Categorias</p>
+            </div>
+
+            <!-- Segunda nova div com os textos das categorias -->
+            <div class="categories-list">
+                <p class="category-item">&gt; saúde</p>
+                <p class="category-item">&gt; desenvolvimento</p>
+                <p class="category-item">&gt; produtividade</p>
+                <p class="category-item">&gt; opinião</p>
+            </div>
+
+        </aside>
+    </div>
+    <div class="footer-logo">
+        <div class="footer-text">Copyright@The Dev News</div>
+    </div>
 </body>
 
 </html>
